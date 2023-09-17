@@ -6,13 +6,13 @@ import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   return (
-    <ChakraProvider>
+    <div className='overflow-x-hidden'>
       <div className="App">
         <Navbar />
         <HeroSection />
         {/* <Products /> */}
       </div>
-    </ChakraProvider>
+    </div>
   );
 }
 
