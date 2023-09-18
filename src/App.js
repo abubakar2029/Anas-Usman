@@ -1,17 +1,19 @@
 import './App.css';
+import { Footer } from './Components/Footer/Footer';
 import HeroSection from './Components/HeroSection/HeroSection';
 import { Navbar } from './Components/Navbar/Navbar';
 import { Products } from './Components/Products/Products';
-import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   return (
-    <div className='overflow-x-hidden'>
-      <div className="App">
+    <div >
+      <div className='min-h-[10vh]'>
         <Navbar />
-        <HeroSection />
-        {/* <Products /> */}
       </div>
+      <div className='min-h-[70vh]'>
+      <HeroSection />
+      </div>
+        <Footer />
     </div>
   );
 }

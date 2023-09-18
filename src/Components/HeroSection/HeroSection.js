@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import axios from "axios";
 /* SILK-CAROUSAL */
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import axios from "axios";
 /* VANILA CSS */
 import "./HeroSection.css"
 export default class SimpleSlider extends Component {
@@ -39,11 +39,11 @@ export default class SimpleSlider extends Component {
                 <img src={item.image} className="h-[80vh] w-full" alt={item.alt} />
             </div>
         ));
-        
+
         return (
             <div className="h-[80vh] hero-Images">
                 <Slider {...settings} className="h-[80vh] w-full ">
-                   {carouselImages}
+                    {carouselImages}
                 </Slider>
             </div>
         );
